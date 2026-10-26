@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velvet Cinema</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav>
+      <a class="brand" href="#inicio">VELVET CINEMA</a>
+      <div class="nav-links">
+        <a href="#filmes">Filmes</a><a href="#noite">Sessão da Noite</a><a href="#sobre">Sobre</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">HOLLYWOOD • 1950 — 1970</p>
+      <h1>Old movies,<br><em>beautiful tragedies.</em></h1>
+      <p class="intro">Um pequeno arquivo de romances, sonhos e noites de cinema com uma atmosfera vintage, melancólica e glamourosa.</p>
+      <a class="cta" href="#filmes">Entrar no cinema</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="quote"><span>✦</span><p>Para quem ainda acredita que alguns filmes devem parecer lembranças.</p><span>✦</span></section>
+
+    <section class="movies" id="filmes">
+      <div class="section-title"><p>THE ARCHIVE</p><h2>Clássicos para uma noite longa</h2></div>
+      <div class="grid">
+        <article class="movie-card"><div class="poster poster-one"><span>1953</span><strong>ROMAN<br>HOLIDAY</strong></div><div class="movie-info"><h3>Roman Holiday</h3><p>Romance • Comédia</p><button onclick="favorite(this)">♡ Favoritar</button></div></article>
+        <article class="movie-card"><div class="poster poster-two"><span>1961</span><strong>BREAKFAST AT<br>TIFFANY'S</strong></div><div class="movie-info"><h3>Breakfast at Tiffany's</h3><p>Romance • Drama</p><button onclick="favorite(this)">♡ Favoritar</button></div></article>
+        <article class="movie-card"><div class="poster poster-three"><span>1955</span><strong>REBEL<br>WITHOUT A CAUSE</strong></div><div class="movie-info"><h3>Rebel Without a Cause</h3><p>Drama • Juventude</p><button onclick="favorite(this)">♡ Favoritar</button></div></article>
+        <article class="movie-card"><div class="poster poster-four"><span>1954</span><strong>REAR<br>WINDOW</strong></div><div class="movie-info"><h3>Rear Window</h3><p>Mistério • Suspense</p><button onclick="favorite(this)">♡ Favoritar</button></div></article>
+      </div>
+    </section>
+
+    <section class="night" id="noite">
+      <div><p class="eyebrow">TONIGHT'S FEATURE</p><h2>Sessão da meia-noite</h2><p>Luzes baixas, cortinas de veludo, perfume antigo e um filme em preto e branco. Escolha um clássico e deixe a noite parecer outra década.</p><button id="randomMovie">Sortear filme ✦</button><p class="result" id="result">Seu filme aparecerá aqui...</p></div>
+      <div class="ticket"><small>ADMIT ONE</small><strong>MIDNIGHT<br>CINEMA</strong><span>ROW 07 • SEAT 12</span></div>
+    </section>
+
+    <section class="about" id="sobre"><p class="eyebrow">ABOUT THE PROJECT</p><h2>Velvet Cinema</h2><p>Projeto escolar desenvolvido em HTML, CSS e JavaScript. A proposta visual mistura cinema clássico americano, glamour vintage, tons de vinho e creme e uma atmosfera romântica e nostálgica.</p></section>
+  </main>
+
+  <footer><p>VELVET CINEMA © 2026 • made for old souls ✦</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
